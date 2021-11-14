@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlito's Calculator App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/fontawesome.min.css" integrity="sha512-fZR38yq4xO90wo6TP7f0IltoS2HxJD3HmXEEt4cGU3BXPDjGZ6nun24myAgfajbfO1TOigLZT/ylZGRhA8vtZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css" integrity="sha512-ioRJH7yXnyX+7fXTQEKPULWkMn3CqMcapK0NNtCN8q//sW7ZeVFcbMJ9RvX99TwDg6P8rAH2IqUSt2TLab4Xmw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body style="font-family:Space Mono;">
+    <div id="wrapper">
+        
+        <div class="leftside"> 
+            <div class="bill" id="arl">
+                <label for=""> Bill</label>
+                <div class="amount-wrapper"> 
+                    <input id="bill-input" type="number" class="billtext" name="amount" placeholder="0">
+                </div> 
+            </div>
+            <div class="tip-section id="arl">
+                <label for=""> Select Tip %</label>
+                <div class="top-tip-wrapper"> 
+                    <div class="tip-item tip">5%</div>
+                    <div class="tip-item tip">10%</div>
+                    <div class="tip-item tip">15%</div>
+                    <div class="tip-item tip">25%</div>
+                    <div class="tip-item tip">50%</div>
+                    <input class="tip-item-input tips" type="number" placeholder="Custom">
+                </div>
+            </div>
+            <div class="numberofppl" id="arl">
+                <label for=""> Number Of People</label>
+                <div class="people-wrapper"> 
+                    <i class="fas fa-user"></i>
+                    <input id="nop-input" type="number" class="billtext" name="nop" placeholder="0">
+                </div> 
+             </div>
+            </div>
+        <div class="rightside">
+            <div class="right-bottom-wrapper">
+            <label for="Tip-amount"> Tip Ammount <span> <br> /person </br> </span></label>
+            <h3 class="output-text"> <span>$</span> <span id="tipP" > 0.00 <span></h3>
+            </div>
+            <div class="right-bottom-wrapper">
+                <label for="total"> Total <span> <br> /person </br> </span></label>
+                <h3 class="output-text"> <span>$</span> <span id="totalP"> 0.00 <span></h3>
+        </div>
+        <div class="button-section">
+        <button id="reset-input">Reset</button>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
